@@ -1,5 +1,4 @@
-from .database import get_db_connection
-
+from app.models.database import get_db_connection
 def get_all_jeux():
     conn = get_db_connection()
     jeux = conn.execute('SELECT id, nom FROM jeux').fetchall()

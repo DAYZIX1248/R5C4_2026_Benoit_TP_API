@@ -1,8 +1,8 @@
 import os
 import sqlite3
 
-# On remonte d'un dossier depuis 'models' pour trouver la racine du projet
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# On remonte de 3 dossiers : database.py -> models -> app -> Racine du projet
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DB_FILE = os.path.join(BASE_DIR, 'R5C54_2026_SUJET', 'parties.db')
 
 def get_db_connection():

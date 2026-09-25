@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify
-from models.references import get_all_jeux, get_all_serveurs, get_all_files
+from app.models.references import get_all_jeux, get_all_serveurs, get_all_files
 
 ref_bp = Blueprint('references', __name__)
 
